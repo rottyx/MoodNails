@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodNails</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <h1>💅 MoodNails</h1>
+  <p>¿Qué estilo de uñas refleja tu estado de ánimo hoy?</p>
+
+  <input type="text" id="promptInput" placeholder="Ej: alegre, elegante con tonos pastel..." />
+  <div style="margin-top: 10px;">
+    <button onclick="generate()">🎨 Generar diseño</button>
+    <button onclick="generateRandom()" class="random-button">🎲 Mood aleatorio</button>
+  </div>
+
+  <p id="status"></p>
+  <div id="error" class="error"></div>
+  <img id="resultImage" src="" alt="" />
+  <div id="actions" style="margin-top: 20px; display: none;">
+    <button onclick="generate()">🔁 Volver a generar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
